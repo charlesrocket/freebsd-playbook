@@ -207,6 +207,7 @@ pkgng_packages:
   - socat
   - swaybg
   - swayidle
+  - swayimg
   - swaylock
   - thunar
   - tig
