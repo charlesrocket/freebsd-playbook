@@ -1,24 +1,36 @@
 ---
 
-ci:
-  - '.github/workflows/*'
-
 documentation:
-  - 'docs/**/*'
+- changed-files:
+  - any-glob-to-any-file: ['README.md', 'docs/**/*']
+
+build:
+- changed-files:
+  - any-glob-to-any-file: ['requirements-dev.txt', 'galaxy.yml']
 
 playbook:
-  - 'playbooks/*'
-
-plugin:
-  - 'plugins/**/*'
-
-profile:
-  - any: ['profiles/**/*', '!profiles/test/*']
+- changed-files:
+  - any-glob-to-any-file: 'playbooks/*'
 
 role:
-  - 'roles/**/*'
+- changed-files:
+  - any-glob-to-any-file: 'roles/*'
+
+plugin:
+- changed-files:
+  - any-glob-to-any-file: 'plugins/*'
+
+profile:
+- changed-files:
+  - any-glob-to-any-file: ['profiles/**/*', '!profiles/test/*']
 
 test:
-  - 'molecule/**/*'
-  - 'tests/**/*'
-  - 'profiles/test/*'
+- changed-files:
+  - any-glob-to-any-file: ['molecule/**/*', 'tests/**/*', 'profiles/test/*']
+
+ops:
+- changed-files:
+  - any-glob-to-any-file: '.github/**/*'
+
+feature:
+ - head-branch: ['^feature', 'feature']
