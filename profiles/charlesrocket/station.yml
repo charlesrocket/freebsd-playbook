@@ -13,7 +13,7 @@ dotfiles_files:
   - .config/doom/config.el
   - .config/doom/init.el
   - .config/doom/packages.el
-  - .config/dorst/config.yaml
+  - .config/dorst/config.toml
   - .config/dunst/dunstrc
   - .config/eww/eww.scss
   - .config/eww/eww.yuck
