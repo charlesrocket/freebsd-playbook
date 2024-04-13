@@ -38,7 +38,7 @@ jobs:
 
   molecule:
     name: test ${{ matrix.scenario }}
-    runs-on: macos-12
+    runs-on: macos-latest
     strategy:
       matrix:
         scenario:
