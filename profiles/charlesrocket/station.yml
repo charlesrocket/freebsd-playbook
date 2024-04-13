@@ -226,4 +226,5 @@ pkgng_packages:
   - wlogout
   - zig
   - zmap
+  - zola
   - zsh
