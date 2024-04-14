@@ -197,6 +197,7 @@ pkgng_packages:
   - rbenv
   - ripgrep
   - rkhunter
+  - ruby
   - rust
   - rust-analyzer
   - scdoc
