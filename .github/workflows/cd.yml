@@ -51,7 +51,7 @@ jobs:
           docs/build -c docs -W --keep-going
 
       - name: Upload artifacts
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v3
         with:
           path: docs/build/html/
 
