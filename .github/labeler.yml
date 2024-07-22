@@ -22,7 +22,7 @@ plugin:
 
 profile:
   - changed-files:
-      - any-glob-to-any-file: ['profiles/**/*', '!profiles/test/*']
+      - any-glob-to-any-file: 'profiles/**/*'
 
 test:
   - changed-files:
