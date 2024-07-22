@@ -16,10 +16,9 @@ platforms:
   - name: instance
     box: "generic/${MOLECULE_DISTRO}"
     interfaces:
-      - network_name: public_network
-        dev: "virbr0"
-        type: "bridge"
-        mode: "bridge"
+      - auto_config: true
+        network_name: private_network
+        type: dhcp
 
     instance_raw_config_args:
       - 'vm.synced_folder ".", "/vagrant", type: "rsync"'
