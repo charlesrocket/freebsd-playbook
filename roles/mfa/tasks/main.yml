@@ -4,7 +4,7 @@
   community.general.pkgng:
     state: present
     name:
-      - py39-yubikey-manager
+      - py311-yubikey-manager
       - yubico-piv-tool
     autoremove: true
     cached: false
