@@ -40,7 +40,7 @@ jobs:
 
   molecule:
     name: test ${{ matrix.scenario }}
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
     strategy:
       matrix:
         scenario:
@@ -59,14 +59,10 @@ jobs:
           cache-dependency-path: '**/requirements-dev.txt'
           check-latest: true
 
-      - name: Install virtualbox
-        run: |
-          brew install --cask virtualbox
-
       - name: Install vagrant
         run: |
-          brew tap hashicorp/tap
-          brew install hashicorp/tap/hashicorp-vagrant
+          sudo apt-get update
+          sudo apt-get install -y virtualbox vagrant
 
       - name: Install dependencies
         run: pip install -r requirements-dev.txt
