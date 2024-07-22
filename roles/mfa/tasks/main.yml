@@ -18,7 +18,7 @@
       - libfido2
       - libu2f-host
       - u2f-devd
-      - py39-fido2
+      - py311-fido2
       - pcsc-lite
       - ccid
     autoremove: true
