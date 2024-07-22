@@ -59,6 +59,11 @@ jobs:
           cache-dependency-path: '**/requirements-dev.txt'
           check-latest: true
 
+      - name: Install vagrant
+        run: |
+          brew tap hashicorp/tap
+          brew install hashicorp/tap/hashicorp-vagrant
+
       - name: Install dependencies
         run: pip install -r requirements-dev.txt
 
