@@ -59,6 +59,10 @@ jobs:
           cache-dependency-path: '**/requirements-dev.txt'
           check-latest: true
 
+      - name: Install virtualbox
+        run: |
+          brew install --cask virtualbox
+
       - name: Install vagrant
         run: |
           brew tap hashicorp/tap
