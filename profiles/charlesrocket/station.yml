@@ -113,7 +113,6 @@ pkgng_packages:
   - cmake
   - crystal
   - curl
-  - cxxmatrix
   - diffutils
   - direnv
   - doas
