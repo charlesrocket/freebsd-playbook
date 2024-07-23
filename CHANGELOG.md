@@ -2,6 +2,47 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.9.2] - 2024-07-23
+
+### Bug Fixes
+
+- Update yubikey manager
+- Update fido2
+- Update qmk
+
+### Miscellaneous tasks
+
+- Add swayimg
+- Upgrade dorst config
+- Add `zola`
+- Add `ruby`
+- Add funding info
+- Bump ansible to 2.17
+- Drop `cxxmatrix`
+
+### Operations
+
+- Update actions
+- Update labeler to v5
+- Reformat labeler config
+- Bump macos
+- Configure dependabot
+- Bump actions/setup-python from 3 to 5
+- Install vagrant
+- Install virtualbox
+- Switch to ubuntu-latest
+- Fix profile label
+- Bump actions/deploy-pages from 1 to 4
+- Bump actions/upload-pages-artifact from 1 to 3
+
+### Styling
+
+- Fix `ci` formatting
+
+### Testing
+
+- Fix network interfaces
+
 ## [1.9.1] - 2024-02-05
 
 ### Bug Fixes
@@ -19,15 +60,15 @@ All notable changes to this project will be documented in this file.
 
 - Change `wg` defaults
 
-### CI/CD
-
-- Update linter
-- Bump fbsd version
-
 ### Miscellaneous tasks
 
 - Bump ansible version
 - Update LICENSE
+
+### Operations
+
+- Update linter
+- Bump fbsd version
 
 ### Refactor
 
@@ -123,10 +164,6 @@ All notable changes to this project will be documented in this file.
 
 - Drop redundant shell change
 
-### CI/CD
-
-- Update `checkout`
-
 ### Documentation
 
 - Fix galaxy badge
@@ -135,6 +172,10 @@ All notable changes to this project will be documented in this file.
 ### Features
 
 - Add shell setting
+
+### Operations
+
+- Update `checkout`
 
 ## [1.4.1] - 2023-09-12
 
@@ -221,10 +262,6 @@ All notable changes to this project will be documented in this file.
 - Check dotfiles list
 - Edit `poudriere_zfs`
 
-### CI/CD
-
-- Add pr labeler
-
 ### Documentation
 
 - Update README.md
@@ -246,6 +283,10 @@ All notable changes to this project will be documented in this file.
 - Check if ohmyzsh needs deployment
 - Enable IPv6
 - Edit documentation link
+
+### Operations
+
+- Add pr labeler
 
 ### Testing
 
@@ -323,11 +364,6 @@ All notable changes to this project will be documented in this file.
 - Use explicit variable declaration
 - Fix argument validation
 
-### CI/CD
-
-- Drop docs.yml
-- Add ansible-lint
-
 ### Documentation
 
 - Fix docsite files
@@ -351,6 +387,11 @@ All notable changes to this project will be documented in this file.
 - Change security level
 - Fix formatting
 - Prepare for 1.0.1
+
+### Operations
+
+- Drop docs.yml
+- Add ansible-lint
 
 ### Styling
 
@@ -386,17 +427,6 @@ All notable changes to this project will be documented in this file.
 - Source pkg config from remote
 - Fix src parameters
 - Fix ohmyzsh installer
-
-### CI/CD
-
-- Fix test script
-- Add docsite workflow
-- Use profiles
-- Update scripts
-- Switch to molecule
-- Rename docsite workflow
-- Fix `lint`
-- Update linter
 
 ### Documentation
 
@@ -455,6 +485,17 @@ All notable changes to this project will be documented in this file.
 - Update `build_ignore`
 - Move screenshot
 
+### Operations
+
+- Fix test script
+- Add docsite workflow
+- Use profiles
+- Update scripts
+- Switch to molecule
+- Rename docsite workflow
+- Fix `lint`
+- Update linter
+
 ### Styling
 
 - Fix formatting
@@ -483,4 +524,5 @@ All notable changes to this project will be documented in this file.
 ### Waybar
 
 - Force copy
+
 
