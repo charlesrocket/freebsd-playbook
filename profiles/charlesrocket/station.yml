@@ -35,6 +35,7 @@ dotfiles_files:
   - .config/wlogout/style.css
   - .shrc
   - .zshrc
+  - bin/devmode
   - bin/hyprstart
 
 # Git
