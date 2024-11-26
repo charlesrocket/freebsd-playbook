@@ -167,7 +167,7 @@ pkgng_packages:
   - imhex
   - imv
   - jq
-  - Kvantum-qt5
+  - Kvantum
   - less
   - llvm
   - lynis
