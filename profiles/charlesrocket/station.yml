@@ -49,7 +49,7 @@ git_helper:
 # Configuration
 laptop: true
 desktop_acpi: true
-asus: true
+asus: false
 amd: false
 clamav: true
 bastille: true
