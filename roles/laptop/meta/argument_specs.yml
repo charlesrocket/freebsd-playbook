@@ -9,4 +9,13 @@ argument_specs:
     author:
       - charlesrocket
 
-    options: {}
+    options:
+      laptop_dock:
+        description: Enable docking station drivers.
+        type: bool
+        default: false
+
+      laptop_thinkpad:
+        description: Enable ThinkPad ACPI drivers.
+        type: bool
+        default: false

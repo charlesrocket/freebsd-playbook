@@ -48,6 +48,9 @@ git_helper:
 
 # Configuration
 laptop: true
+laptop_thinkpad: true
+laptop_dock: false
+
 desktop_acpi: true
 asus: false
 amd: false

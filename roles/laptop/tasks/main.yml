@@ -29,3 +29,19 @@
     name: economy_cx_lowest
     value: "Cmax"
     state: present
+
+- name:
+    "ThinkPad drivers | {{ laptop_thinkpad | ternary('enable', 'disable') }}"
+  community.general.sysrc:
+    name: acpi_ibm_load
+    state: present
+    value: "{{ laptop_thinkpad | ternary('YES', 'NO') }}"
+    path: /boot/loader.conf
+
+- name:
+    "Dock drivers | {{ laptop_dock | ternary('enable', 'disable') }}"
+  community.general.sysrc:
+    name: acpi_dock_load
+    state: present
+    value: "{{ laptop_dock | ternary('YES', 'NO') }}"
+    path: /boot/loader.conf
