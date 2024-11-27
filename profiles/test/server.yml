@@ -1,5 +1,5 @@
 ---
-clamav: true
+clamav: false
 bastille: true
 bastille_zfs_enable: false
 git: true

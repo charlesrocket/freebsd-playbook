@@ -3,7 +3,7 @@
 laptop: false
 asus: true
 amd: true
-clamav: true
+clamav: false
 bastille: true
 doomemacs: false
 desktop_ohmyzsh: true
