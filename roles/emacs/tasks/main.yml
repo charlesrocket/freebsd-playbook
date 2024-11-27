@@ -1,7 +1,7 @@
 ---
 
 - name:
-    "Ensure Emacs ({{ emacs_wayland | ternary('Wayland', 'X') }}) is installed"
+    "Ensure Emacs is installed | {{ emacs_wayland | ternary('Wayland', 'X') }}"
   community.general.pkgng:
     state: present
     name: "{{ emacs_wayland | ternary('emacs-wayland', 'emacs') }}"
