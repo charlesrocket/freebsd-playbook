@@ -2,6 +2,29 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.10.0] - 2024-11-27
+
+### Bug Fixes
+
+- Update Kvantum package
+- Rename emacs pkg task
+
+### Features
+
+- Add thinkpad settings
+- Add emacs wayland support
+
+### Miscellaneous tasks
+
+- Add `devmode`
+- Add `valgrind`
+- Drop asus settings
+- Drop libsecret helper
+
+### Testing
+
+- Disable clamav
+
 ## [1.9.2] - 2024-07-23
 
 ### Bug Fixes
