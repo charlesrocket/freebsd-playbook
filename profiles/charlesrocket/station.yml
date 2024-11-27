@@ -43,7 +43,6 @@ git_repo_destination: ~/src/git
 git_repo_shallow: true
 git_helper_directory: ~/bin
 git_helper:
-  - libsecret
   - netrc
 
 # Configuration
