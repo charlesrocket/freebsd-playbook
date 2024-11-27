@@ -56,6 +56,7 @@ amd: false
 clamav: true
 bastille: true
 doomemacs: true
+emacs_wayland: true
 desktop_ohmyzsh: true
 intel: true
 sys_microcode_update: true

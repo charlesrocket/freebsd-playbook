@@ -9,4 +9,8 @@ argument_specs:
     author:
       - charlesrocket
 
-    options: {}
+    options:
+      emacs_wayland:
+        description: Use Wayland build.
+        type: bool
+        default: false

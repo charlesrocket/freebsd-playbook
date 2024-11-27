@@ -1,9 +1,10 @@
 ---
 
-- name: Ensure Emacs is installed
+- name:
+    "Ensure Emacs ({{ emacs_wayland | ternary('Wayland', 'X') }}) is installed"
   community.general.pkgng:
     state: present
-    name: emacs
+    name: "{{ emacs_wayland | ternary('emacs-wayland', 'emacs') }}"
     autoremove: true
     cached: false
   become: true
