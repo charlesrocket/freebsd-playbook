@@ -7,13 +7,6 @@
     autoremove: true
     cached: false
 
-- name: Enable Atheros driver
-  community.general.sysrc:
-    name: if_ath_load
-    state: present
-    value: "YES"
-    path: /boot/loader.conf
-
 - name: Enable WEP
   community.general.sysrc:
     name: wlan_wep_load
