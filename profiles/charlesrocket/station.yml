@@ -133,7 +133,6 @@ pkgng_packages:
   - ffuf
   - filezilla
   - firefox-esr
-  - font-awesome
   - fusefs-exfat
   - fusefs-ext2
   - fusefs-hfsfuse
@@ -181,6 +180,7 @@ pkgng_packages:
   - meson
   - mp3blaster
   - mpv
+  - nerd-fonts
   - netcat
   - nikto
   - ninja
