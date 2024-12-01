@@ -19,10 +19,12 @@ dotfiles_files:
   - .config/eww/eww.yuck
   - .config/eww/scripts/get-active-workspace
   - .config/eww/scripts/get-battery
+  - .config/eww/scripts/get-devs
   - .config/eww/scripts/get-network
   - .config/eww/scripts/get-volume
   - .config/eww/scripts/get-window-title
   - .config/eww/scripts/get-workspaces
+  - .config/eww/scripts/toggle-bt
   - .config/gtk-3.0/settings.ini
   - .config/git/config
   - .config/hypr/hyprland.conf
