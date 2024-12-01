@@ -231,6 +231,7 @@ pkgng_packages:
   - wget
   - whois
   - wlogout
+  - xwayland
   - zig
   - zmap
   - zola
