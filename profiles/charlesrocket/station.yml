@@ -147,6 +147,7 @@ pkgng_packages:
   - gedit
   - gimp
   - git-cliff
+  - git-credential-oauth
   - gitg
   - glslang
   - gmake
