@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.10.1] - 2024-12-13
+
+### Bug Fixes
+
+- Drop Atheros driver
+
+### Miscellaneous tasks
+
+- Add nerd-fonts
+- Add eww (bt) scripts
+- Add xwayland
+- Switch to libsecret
+- Add keyring packages
+- Add git-credential-oauth
+
+### Operations
+
+- Fix vagrant installation
+
 ## [1.10.0] - 2024-11-27
 
 ### Bug Fixes
