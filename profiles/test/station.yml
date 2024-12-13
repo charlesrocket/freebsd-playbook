@@ -19,6 +19,7 @@ wg_enabled: true
 bastille_zfs_enable: true
 bastille_zfs_zpool: zroot
 tethering_apple: true
+tethering_android: true
 timezone: America/Los_Angeles
 
 common_lynis_profile: desktop

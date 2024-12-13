@@ -1,12 +1,26 @@
 ---
 
-- name: Enable ipheth
+- name: "Apple tethering | {{ tethering_apple | ternary('enable', 'disable') }}"
   community.general.sysrc:
     name: if_ipheth_load
-    state: present
+    state: "{{ tethering_apple | ternary('present', 'absent') }}"
     value: "YES"
     path: /boot/loader.conf
-  when: tethering_apple
+
+- name:
+    "Android tethering | {{ tethering_android | ternary('enable', 'disable') }}"
+  community.general.sysrc:
+    name: if_urndis_load
+    state: "{{ tethering_android | ternary('present', 'absent') }}"
+    value: "YES"
+    path: /boot/loader.conf
+
+- name: "CDCE tethering | {{ tethering_cdce | ternary('enable', 'disable') }}"
+  community.general.sysrc:
+    name: if_cdce_load
+    state: "{{ tethering_cdce | ternary('present', 'absent') }}"
+    value: "YES"
+    path: /boot/loader.conf
 
 - name: Configure Apple devices
   ansible.builtin.blockinfile:
@@ -21,6 +35,14 @@
               action "usbconfig -d $cdev set_config 3";
       };
   when: tethering_apple
+
+- name: Ensure devd directory exists
+  ansible.builtin.file:
+    path: /usr/local/etc/devd
+    state: directory
+    owner: root
+    group: wheel
+    mode: '0755'
 
 - name: Configure ueX interface
   ansible.builtin.copy:

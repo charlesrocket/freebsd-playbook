@@ -1,3 +1,5 @@
 ---
 
 tethering_apple: false
+tethering_android: false
+tethering_cdce: false

@@ -14,3 +14,13 @@ argument_specs:
         description: Support Apple devices.
         type: bool
         default: false
+
+      tethering_android:
+        description: Support Android devices.
+        type: bool
+        default: false
+
+      tethering_cdce:
+        description: Support tethering with CDCE.
+        type: bool
+        default: false
