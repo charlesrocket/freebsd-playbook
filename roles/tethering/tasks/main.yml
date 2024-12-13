@@ -17,7 +17,15 @@
               match "subsystem"       "DEVICE";
               match "type"            "ATTACH";
               match "vendor"          "0x05ac";
-              match "product"          "0x12a8";
+              match "product"         "0x12a8";
               action "usbconfig -d $cdev set_config 3";
       };
   when: tethering_apple
+
+- name: Configure ueX interface
+  ansible.builtin.copy:
+    src: usb_tethering.conf
+    dest: /usr/local/etc/devd/usb_tethering.conf
+    owner: root
+    group: wheel
+    mode: '0640'
