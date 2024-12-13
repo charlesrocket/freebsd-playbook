@@ -22,7 +22,7 @@ tags:
   - virtualbox
 
 dependencies:
-  "ansible.posix": ">=1.5.4"
+  "ansible.posix": ">=2.0.0"
   "community.general": ">=10.1.0"
   "charlesrocket.essential": ">=1.3.3"
 
