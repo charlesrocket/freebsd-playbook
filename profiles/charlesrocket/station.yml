@@ -24,6 +24,7 @@ dotfiles_files:
   - .config/eww/scripts/get-volume
   - .config/eww/scripts/get-window-title
   - .config/eww/scripts/get-workspaces
+  - .config/eww/scripts/power-button
   - .config/eww/scripts/toggle-bt
   - .config/gtk-3.0/settings.ini
   - .config/git/config
