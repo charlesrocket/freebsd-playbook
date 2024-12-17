@@ -2,6 +2,27 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.11.0] - 2024-12-17
+
+### Bug Fixes
+
+- Configure tethering interface
+- Set `fetch_vars` tags
+
+### Features
+
+- Add android tethering
+- Check user level
+
+### Miscellaneous tasks
+
+- Add power button script
+
+### Build
+
+- Bump `community.general` to 10.1.0
+- Bump `ansible.posix` to 2.0.0
+
 ## [1.10.1] - 2024-12-13
 
 ### Bug Fixes
