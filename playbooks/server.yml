@@ -4,6 +4,12 @@
   hosts: "{{ target | default('all') }}"
 
   pre_tasks:
+    - name: "Checking user level | {{ ansible_user_id }}"
+      ansible.builtin.assert:
+        msg: Do not run this playbook as root.
+        that: "ansible_user_id != 'root'"
+      tags: always
+
     - name: "Activating profile | {{ profile }}"
       ansible.builtin.include_role:
         name: "charlesrocket.essential.fetch_vars"
