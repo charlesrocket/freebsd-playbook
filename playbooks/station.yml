@@ -7,6 +7,8 @@
     - name: "Activating profile | {{ profile }}"
       ansible.builtin.include_role:
         name: "charlesrocket.essential.fetch_vars"
+        apply:
+          tags: always
       vars:
         fetch_vars_url:
           "https://raw.githubusercontent.com/charlesrocket/\
