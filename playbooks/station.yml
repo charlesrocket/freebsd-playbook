@@ -20,7 +20,7 @@
           "https://raw.githubusercontent.com/charlesrocket/\
           freebsd-collection/trunk/profiles/{{ profile }}/\
           {{ profile_version | default('station') }}.yml"
-      when: profile is not regex("^\/")
+      when: (profile is defined) and profile is not regex("^\/")
       tags: always
 
     - name: "Activating local profile"
@@ -31,7 +31,7 @@
       vars:
         fetch_vars_url:
           "{{ profile }}"
-      when: profile is regex("^\/")
+      when: (profile is defined) and profile is regex("^\/")
       tags: always
 
   roles:
