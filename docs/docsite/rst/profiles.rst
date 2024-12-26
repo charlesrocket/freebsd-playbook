@@ -14,4 +14,6 @@ Playbooks will download and apply user profiles if ``profile`` variable is prese
 
     ansible-playbook charlesrocket.freebsd.station -e "profile=charlesrocket"
 
-Add ``profile_version`` variable to use a custom profile version (``profiles/$USER/$PROFILE_VERSION``).
+Add ``profile_version`` variable to specify a playbook.
+
+Set ``profile`` to an absolute path to load a local profile file (testing, edge cases).
