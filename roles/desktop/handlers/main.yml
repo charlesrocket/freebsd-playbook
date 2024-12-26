@@ -1,0 +1,8 @@
+---
+
+- name: Install Bibata Original Classic  # noqa: command-instead-of-module
+  ansible.builtin.command:
+    cmd: "tar -xf /tmp/Bibata-Original-Classic.tar.xz"
+    chdir: "{{ ansible_user_dir }}/.local/share/icons"
+    creates: "{{ ansible_user_dir }}/.local/share/icons/Bibata-Original-Classic"
+  become: false

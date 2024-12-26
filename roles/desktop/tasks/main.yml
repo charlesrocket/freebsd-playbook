@@ -6,6 +6,27 @@
     groups: video
     append: true
 
+- name: Install Bibata cursor
+  become: false
+  block:
+    - name: Create cursor directory
+      ansible.builtin.file:
+        path: "{{ ansible_user_dir }}/.local/share/icons"
+        state: directory
+        owner: "{{ ansible_user | default(ansible_user_id) }}"
+        group: "{{ ansible_user | default(ansible_user_id) }}"
+        mode: '0700'
+
+    - name: Download Bibata Original (Classic) cursor theme
+      ansible.builtin.get_url:
+        url: "https://github.com/ful1e5/Bibata_Cursor/releases/download/\
+          v2.0.7/Bibata-Original-Classic.tar.xz"
+        dest: /tmp/Bibata-Original-Classic.tar.xz
+        mode: '0700'
+        checksum:
+          sha256:158b2e7e1b7f6d0eec1af80a93172960dd083b652fef7589575ee984673cc468
+      notify: Install Bibata Original Classic
+
 - name: Install ohmyzsh
   ansible.builtin.shell:
     cmd: >-
