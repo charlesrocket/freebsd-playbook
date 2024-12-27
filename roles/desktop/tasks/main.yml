@@ -37,8 +37,7 @@
   args:
     creates: "/home/{{ ansible_user | default(ansible_user_id) }}/.oh-my-zsh"
   become: false
-  when:
-    - "'zsh' in ansible_facts.packages and 'desktop_ohmyzsh'"
+  when: desktop_ohmyzsh
 
 - name: "Usermount | {{ desktop_usermount | ternary('enable', 'disable') }}"
   ansible.posix.sysctl:
