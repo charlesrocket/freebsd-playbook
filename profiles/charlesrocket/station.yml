@@ -58,8 +58,6 @@ asus: false
 amd: false
 clamav: true
 bastille: true
-doomemacs: true
-emacs_wayland: true
 desktop_ohmyzsh: true
 intel: true
 sys_microcode_update: true
@@ -67,6 +65,10 @@ qmk: true
 virtualbox: true
 wifi: true
 mfa: true
+
+doomemacs: true
+emacs_languagetool: true
+emacs_wayland: true
 
 wg_enabled: true
 

@@ -14,3 +14,13 @@ argument_specs:
         description: Use Wayland build.
         type: bool
         default: false
+
+      emacs_languagetool:
+        description: Deploy LanguageTool.
+        type: bool
+        default: false
+
+      emacs_languagetool_path:
+        description: LanguageTool path.
+        type: str
+        default: '~/.languagetool'

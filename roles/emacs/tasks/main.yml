@@ -18,3 +18,33 @@
     update: false
   notify:
     - Synchronize Doom Emacs
+
+- name: Install LanguageTool
+  when: emacs_languagetool
+  become: false
+  block:
+    - name: Get LanguageTool tags
+      ansible.builtin.uri:
+        url: https://api.github.com/repos/languagetool-org/languagetool/tags
+        return_content: true
+      register: emacs_lt_tags
+
+    - name: "Download LanguageTool {{ emacs_lt_tags.json[0].name }}"
+      ansible.builtin.get_url:
+        url: "https://languagetool.org/download/LanguageTool-\
+          {{ emacs_lt_tags.json[0].name | replace('v', '') }}.zip"
+        dest: "/tmp/languagetool-\
+          {{ emacs_lt_tags.json[0].name | replace('v', '') }}.zip"
+        mode: '0740'
+
+    - name: Extract LanguageTool
+      ansible.builtin.unarchive:
+        src: "/tmp/languagetool-\
+          {{ emacs_lt_tags.json[0].name | replace('v', '') }}.zip"
+        dest: /tmp
+        owner: "{{ ansible_user | default(ansible_user_id) }}"
+        group: "{{ ansible_user | default(ansible_user_id) }}"
+        creates: "/tmp/LanguageTool-\
+          {{ emacs_lt_tags.json[0].name | replace('v', '') }}/"
+        remote_src: true
+      notify: "Deploy LanguageTool: {{ emacs_languagetool_path }}"

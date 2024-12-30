@@ -1,3 +1,5 @@
 ---
 
+emacs_languagetool: false
+emacs_languagetool_path: "~/.languagetool"
 emacs_wayland: false

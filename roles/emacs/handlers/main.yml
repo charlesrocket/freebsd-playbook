@@ -6,3 +6,11 @@
   changed_when:
     - '"No packages need to be installed" not in doom_output.stdout'
     - '"No packages need rebuilding" not in doom_output.stdout'
+
+- name: "Deploy LanguageTool: {{ emacs_languagetool_path }}"
+  ansible.builtin.command:
+    cmd: >-
+      mv /tmp/LanguageTool-{{ emacs_lt_tags.json[0].name | replace('v', '') }}
+      {{ emacs_languagetool_path }}
+    removes:
+      "/tmp/LanguageTool-{{ emacs_lt_tags.json[0].name | replace('v', '') }}"
