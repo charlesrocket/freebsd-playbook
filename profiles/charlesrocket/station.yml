@@ -106,12 +106,13 @@ git_doc: false
 
 # Packages
 pkgng_packages:
-  - apl385
   - adwaita-icon-theme
   - adwaita-qt5
   - alacritty
+  - apl385
   - arduino-core
   - aria2
+  - aspell
   - base64
   - bash
   - btop
