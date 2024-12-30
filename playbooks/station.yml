@@ -115,7 +115,7 @@
       tags: bastille
 
     - role: emacs
-      when: doomemacs
+      when: emacs_doom
       tags: emacs
 
     - role: intel

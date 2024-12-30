@@ -5,7 +5,6 @@ asus: true
 amd: true
 clamav: false
 bastille: true
-doomemacs: false
 desktop_ohmyzsh: true
 intel: true
 microcode_update: false
@@ -13,6 +12,8 @@ qmk: false
 virtualbox: true
 wifi: true
 mfa: true
+
+emacs_doom: false
 
 wg_enabled: true
 

@@ -66,7 +66,7 @@ virtualbox: true
 wifi: true
 mfa: true
 
-doomemacs: true
+emacs_doom: true
 emacs_languagetool: true
 emacs_wayland: true
 
