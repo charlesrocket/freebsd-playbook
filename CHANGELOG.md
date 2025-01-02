@@ -2,6 +2,39 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.12.0] - 2025-01-02
+
+### Bug Fixes
+
+- Fix devd permissions
+- Allow empty `profile`
+- Update ohmyzsh conditional
+
+### Documentation
+
+- Update `profiles` description
+
+### Features
+
+- Support local profiles
+- Install cursor theme
+- Install `languagetool`
+
+### Miscellaneous tasks
+
+- Add `aspell`
+- Drop `swayimg`
+- Update LICENSE
+- Add bin/lowpowermode
+
+### Refactor
+
+- [**breaking**] `doomemacs` -> `emacs_doom`
+
+### Build
+
+- Bump `charlesrocket.essential` to 1.4.0
+
 ## [1.11.0] - 2024-12-17
 
 ### Bug Fixes
