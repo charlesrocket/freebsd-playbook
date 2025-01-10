@@ -241,6 +241,7 @@ pkgng_packages:
   - wlogout
   - xwayland
   - zig
+  - zls
   - zmap
   - zola
   - zsh
